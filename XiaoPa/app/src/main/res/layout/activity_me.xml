@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/rv_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/male"
+        app:civ_fill_color="@color/Black"
+        android:layout_gravity="center"
+        app:riv_oval="true" />
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户昵称"
+        android:layout_gravity="center"
+        android:textSize="18dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search"
+            android:text="聚会记录"
+            android:textColor="@color/orange"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_collect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search"
+            android:text="我的收藏"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_myComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search"
+            android:text="我的评论"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_information"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search"
+            android:text="通知"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <com.base.xiaopa.view.NoScrollViewPager
+        android:id="@+id/vp_mf2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.0"/>
+
+
+</LinearLayout>

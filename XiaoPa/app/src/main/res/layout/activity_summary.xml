@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/ad_good_voice">
+
+
+
+            <Button
+                android:id="@+id/bt_joinIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/shape_surebutton"
+                android:gravity="center"
+                android:text="加入活动"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_introduce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle"
+                android:onClick="introduce"
+                android:text="活动介绍"
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bt_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle"
+                android:onClick="comment"
+                android:text="用户评论"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bt_imgshow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle"
+                android:onClick="Show"
+                android:text="图片展示"
+
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <com.base.xiaopa.view.NoScrollViewPager
+            android:id="@+id/vp_mf2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14.0"
+            android:background="@drawable/shape_eidt" />
+
+    </LinearLayout>
+</LinearLayout>

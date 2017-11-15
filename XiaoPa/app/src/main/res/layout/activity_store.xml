@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#33000000" />
+
+
+    <!-- 滑动 -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="20"
+
+            >
+
+
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#FFFFFF"
+                app:banner_pageChangeDuration="1000"
+                app:banner_pointContainerBackground="@android:color/transparent"
+                app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+                app:banner_transitionEffect="depth" />
+
+            <!--分类-->
+            <TextView
+                android:layout_width="85sp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rfenlei_background"
+                android:text="商品分类"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/ll_snacks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_snacks"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/snacks" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="休闲食品" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_drinks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_drinks"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/drink" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="茶水饮料" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_decorate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_decorate"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/decorate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="装饰用品" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_gameprop"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_gameprop"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/gameprop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="游戏用具" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_outside"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_outside"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/outside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="户外用具" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_others"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_others"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/others" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--限时抢购-->
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rqianggou_background"
+                    android:text="限时抢购"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/clock_hour"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rdaojishi_background"
+
+                    android:gravity="center"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="#E60012" />
+
+                <TextView
+                    android:id="@+id/clock_minutes"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:background="@drawable/rdaojishi_background"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="#E60012" />
+
+                <TextView
+                    android:id="@+id/clock_second"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/rdaojishi_background"
+                    android:gravity="center"
+
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/xianshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dividerHeight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+
+            <!--为你推荐-->
+
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="25dp"
+                android:background="@drawable/rtuijian_background"
+                android:text="为您推荐"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                android:dividerHeight="10dp"
+                android:paddingTop="10dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
